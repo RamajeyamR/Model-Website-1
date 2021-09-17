@@ -1,7 +1,5 @@
-* {
-    box-sizing: border-box;
-}
-.header 
+/*Header*/
+.header
 {
     background-color: rgb(49, 190, 160);
     text-align: center;
@@ -11,4 +9,95 @@
 }
 .header h1{
     font-size: 40px;
+}
+
+/*Navigation Bar*/
+
+.navbar
+{
+    overflow: hidden;
+    background-color: black;
+}
+.navbar a.active
+{
+    background-color: #808080;
+}
+.navbar a
+{
+    display: block;
+    text-align: center;
+    color: white;
+    float: left;
+    text-decoration: none;
+    padding: 14px 20px;   
+}
+.navbar a.right
+{
+    float: right;
+}
+.navbar a:hover
+{
+    background-color: white;
+    color: black;
+}
+
+/*Content*/
+
+*{box-sizing: border-box;}
+.column
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.side
+{
+    background-color: #e6e6e6;
+    padding: 20px;
+    flex: 30%;
+}
+.img1
+{
+    height: 200px;
+    padding: 20px;
+    background-color: #999999;
+}
+.img2
+{
+    height: 60px;
+    padding: 20px;
+    background-color: #999999;
+}
+.main
+{
+    padding: 20px;
+    background-color: white;
+    flex: 70%;
+}
+
+/*Footer*/
+
+.footer
+{
+    padding: 20px;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+/*Responsive layout*/
+
+@media screen and (max-width: 700px)
+{
+    .column
+    {
+        flex-direction: column;
+    }
+    
+}
+@media screen and (max-width: 400px) 
+{
+ .navbar
+ {
+     float: none;
+     width: 100%;
+ }   
 }
