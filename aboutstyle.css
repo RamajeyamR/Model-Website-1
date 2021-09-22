@@ -34,53 +34,51 @@
 .navbar a.right
 {
     float: right;
-    background-color: #808080;
 }
 .navbar a:hover
 {
     background-color: white;
     color: black;
 }
-
 *{box-sizing: border-box;}
+.row
+{
+    background-color: white;
+}
 .column
 {
-    display: flex;
-    flex-wrap: wrap;
-    float: left;
-    width: 100%;
-    margin-top: 6px;
-    padding: 20px;
-}
-.side
-{
-    flex: 50%;
-    padding: 20px;
-    padding-top: 5px;
-    padding-right: 30px;
-
-}
-.main
-{
-    flex: 50%;
-}
-input[type=text], select, textarea
-{
-    resize: vertical;
-    padding: 12px;
-    margin-top: 5px;
+    padding: 0 8px;
     margin-bottom: 15px;
-    width: 70%;
+    float: left;
+    width: 33.3%;
 }
-input[type=submit]
+.card
 {
-    background-color: #04aa6d;
-    color: white;
-    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 10px;
+}
+.container
+{
+    padding: 0 15px;
+    padding-bottom: 10px;
+}
+.title
+{
+    color: grey;
+}
+.button
+{
+    width: 100%;
+    text-align: center;
     border: none;
-    padding: 12px 20px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    padding: 8px;
+    display: inline-block;
+    outline: 0;
 }
-input[type=submit]:hover
+.button:hover
 {
-    background-color: #45a049;
+    background-color: gray;
 }
